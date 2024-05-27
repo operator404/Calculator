@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/mathjs@12.1.0/lib/browser/math.min.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="calculator.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div id="calc-body">
+        <div id="screendiv">
+            <input type="text" placeholder="0" id="screen" name="screen" disabled>
+        </div>
+        <input type="text" placeholder="0" id="result" name="result" disabled>
+        <div id="btn-container">
+            <button id="clearentry">CE</button>
+            <button id="clear">C</button>
+            <!-- <button id="brackets">()</button> -->
+            <button id="backspace">DEL</button>
+            <!-- <i class="material-icons">backspace</i> -->
+            <button id="percentage">%</button>
+            <button id="seven" class="number">7</button>
+            <button id="eight" class="number">8</button>
+            <button id="nine" class="number">9</button>
+            <button id="divide" class="mathopr">/</button>
+            <button id="four" class="number">4</button>
+            <button id="five" class="number">5</button>
+            <button id="six" class="number">6</button>
+            <button id="product" class="mathopr">*</button>
+            <button id="one" class="number">1</button>
+            <button id="two" class="number">2</button>
+            <button id="three" class="number">3</button>
+            <button id="differ" class="mathopr">-</button>
+            <button id="zero" class="number">0</button>
+            <button id="decimalpt" class="number">.</button>
+            <button id="equals">=</button>
+            <button id="add" class="mathopr">+</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>

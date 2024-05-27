@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    --pos: 100%;
+}
+
+#calc-body {
+    max-width: min-content;
+    margin: 3rem auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: white;
+    position: relative;
+    background: #000000;
+}
+
+#screendiv {
+    display: flex;
+    justify-content: center;
+}
+
+#screendiv,
+#result {
+    padding: 1rem;
+}
+
+#screen,
+#result {
+    text-align: right;
+    background-color: inherit;
+}
+
+#screen {
+    font-size: 3rem;
+    width: 100%;
+    border: none;
+    color: inherit;
+    overflow: scroll;
+}
+
+#result {
+    color: #cdcdcd;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    border: none;
+}
+
+#btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    font-size: 1.1rem;
+    line-height: 4rem;
+    border-radius: 0.25rem;
+    background: linear-gradient(135deg, #131c31, #ffffff 50%, #131c31);
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover {
+        background-position: 0% 100%;
+    }
+}
+
+#clearentry {
+    color: orangered;
+}
+
+@media only screen and (max-width: 540px) {
+
+    #btn-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
