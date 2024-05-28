@@ -8,11 +8,10 @@
 #calc-body {
     max-width: min-content;
     margin: 3rem auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0 .5rem;
     display: flex;
     flex-flow: column wrap;
-    border-radius: 5px;
+    border-radius: .5rem;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     color: white;
     position: relative;
